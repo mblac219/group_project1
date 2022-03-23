@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --detail: azure;
+}
+
+
+#form {
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+    padding: 10px;
+    border: 10px solid #E09F3E;
+    background-color: white;
+}
+
+form label {
+    color: black;
+}
+
+.jumbotron { 
+    border-bottom: 10px solid #E09F3E;
+    background-color: var(--detail);
+    background-image: url(../image/book.png);
+    background-size: cover;
+}
+
+aside h2 {
+
+    color: var(--detail);
+}
+
+marquee {
+    color: var(--detail);
+}
+body {
+    background-color: #540B0E;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    padding: 10px;
+    border: 10px solid #E09F3E;
+}
+
+#introBox {
+    position: relative;
+}
+
+
+#ageReq {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+     align-items: center;
+    justify-content: space-around;  
+     margin: 10px;
+
+}
+
+li {
+    list-style: none;
+}

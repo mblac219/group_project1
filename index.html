@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/image/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>BuzzWordz</title>
+</head>
+<body>
+    <header class="jumbo">
+        <div class="jumbotron">
+            <form id="form">
+                <h2>Register</h2>
+                <p id="thank-you-msg"></p>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="AwesomeSauce22" /> 
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="janedoe@mail.com" />           
+             
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="supersecure123" />
+                
+              <button id="sign-up">Sign Up</button>
+          </form>
+                <marquee behavior="alternate" scrollamount="15" direction=""><h1>BuzzWordz</h1></marquee>
+        </div>
+    </header>
+
+    <main>
+        <div id="introCard" class="card">
+            <div class="card-body">
+                
+                <h3>Welcome to BuzzWordz, your go to book and cocktail generator!</h3>
+                <ul>
+                    <li>
+                        To start, confirm your age below.
+                    </li>
+                    <li>
+                        Next, pick your desired book genre.
+                    </li>
+                    <li>
+                        Finally, receive your book and cocktail recommendations.
+                    </li>
+                    <li>
+                        Have fun and drink responsibly!
+                    </li>
+                </ul>
+                <div id="ageReq">
+                    <h3>Are you 21+ ?</h3>
+                   <input required type="radio"  name="question" id="checkAge" onclick="askAge(this)">
+                   <label for="checkAge">Yes</label> 
+                   
+                   <input required type="radio" name="question" id="noCheckAge" onclick="askAge(this)" >
+                   <label for="checkAge">No</label>
+                   
+                   <input type="submit" id="ageBttn" value="Submit" disabled></input> 
+                  
+               </div>
+              
+    
+            </div>
+
+        </div> 
+        
+    </main>
+    
+   
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>

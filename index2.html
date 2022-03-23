@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/image/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Drink&Read</title>
+</head>
+<body>
+  <header id="header">
+    <div class="jumbotron">
+      <h1 id="welcomeUser"></h1>
+            <marquee behavior="alternate" scrollamount="15" direction=""><h1>Your BuzzWordz Pairing is...</h1></marquee>
+    </div>
+</header>
+    <main class="row-12">
+      <aside class="past-results col-4">
+        <form id="search-form" class="form w-100">
+          <h2>Select your book genre</h2>
+
+   <select id="format-input" class="form-input w-100"  >
+  <option value="" disabled selected>Select a Genre...</option>
+  <option value="Romance">Romance</option>
+  <option value="Mystery">Mystery</option>
+  <option value="Fantasy">Fantasy</option>
+  <option value="Beach-Read">Beach-Read</option>
+  </select>
+  <select id="cocktail-input" class="form-input w-100">
+    <option value="" disabled selected>Select a cocktail base...</option>
+    <option value="tequila">Tequila</option>
+    <option value="whiskey">Whiskey</option>
+    <option value="vodka">Vodka</option>
+    <option value="rum">Rum</option>
+</select>
+
+
+  <button id="bookBttn" class="btn btn-info btn-block">Click Me</button>
+</form>
+  <br>
+        <!-- Pull past results from local storage -->
+        <h2>Previous Results:</h2>
+        <div>
+          <ul id="resultHistory">
+            <!-- Show result history -->
+          </ul>
+        </div>
+      </aside>
+      <section class="current-results col-8">
+        <div id="bookResult" class="card">
+          <div class="card-body">
+              <h2>Your Book is:</h2>   
+          </div>
+          <div id="book-title" class="jumbotron"> </div>
+        </div>
+        <div id="cocktailResult" class="card">
+          <div class="card-body">
+            <h2>Your Cocktail is:</h2>     
+          </div>
+          <div id="cocktail-name" class="jumbotron"> </div>
+        </div>
+      </section>
+    </main>
+    
+    
+    <button> 
+    <a href="./index.html">Back to Home you Drunk! </a>
+  </button>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/javascript/script2.js"></script>
+</body>
+</html>
